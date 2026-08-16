@@ -9,17 +9,11 @@
 
     <title>京都御朱印巡禮</title>
 
-    <!-- 使用自己的 CSS -->
     <link rel="stylesheet" href="kyoto.css">
 
 </head>
 
 <body>
-
-
-    <!-- =====================================================
-         網頁標題
-    ====================================================== -->
 
     <h1 class="title">
 
@@ -31,83 +25,34 @@
 
     </h1>
 
-
-
-    <!-- =====================================================
-         上方切換按鈕
-    ====================================================== -->
-
     <div class="nav-bar">
 
         <button id="toggle-btn" class="nav-btn">4天路線規劃</button>
 
     </div>
 
-
-
-    <!-- =====================================================
-         景點介紹區
-    ====================================================== -->
-
     <div class="container" id="main-container">
-
-
-        <!-- =================================================
-             左側：景點詳細資訊
-        ================================================== -->
 
         <div class="display">
 
-            <!-- 景點介紹 -->
-
             <p id="display-desc">點擊右方神社/寺廟名稱即可查看介紹。</p>
-
-
-            <!-- 交通資訊 -->
 
             <p id="display-trans"></p>
 
-
-            <!-- 開放時間 -->
-
             <p><span id="display-time"></span></p>
-
-
-            <!-- 官方網站 -->
 
             <a id="display-link" href="#" target="_blank"></a>
 
 
-
-            <!-- =================================================
-                 景點專屬筆記
-            ================================================== -->
-
             <div id="spot-notes-container">尚未選擇景點。</div>
-
-
-            <!-- 景點筆記輸入框 -->
 
             <textarea id="spot-note-input" placeholder="輸入這個景點的個人筆記，例如：御朱印費用、想買的紀念品"></textarea>
 
-
-            <!-- 儲存景點筆記 -->
-
             <button id="save-spot-note-btn">儲存景點筆記</button>
-
-
-            <!-- 儲存成功提示 -->
 
             <span id="spot-note-status">儲存成功！</span>
 
-            <!-- 景點圖片 -->
-
             <img id="display-img" src="./images/default.jpg" alt="">
-
-
-            <!-- =================================================
-                 Google Maps
-            ================================================== -->
 
             <div class="map-container">
 
@@ -118,12 +63,6 @@
             </div>
 
         </div>
-
-
-
-        <!-- =================================================
-             右側：景點列表
-        ================================================== -->
 
         <div class="info">
 
@@ -236,23 +175,12 @@
 
     </div>
 
-
-
-    <!-- =====================================================
-         四天行程規劃
-    ====================================================== -->
-
     <div class="itinerary-view" id="itinerary-container">
 
 
         <h2>京都御朱印巡禮：四天分區路線規劃</h2>
 
-        <!-- =================================================
-             Day 1
-        ================================================== -->
-
         <h3>Day 1：市中心與陰陽師的傳說（洛中、北野地區）</h3>
-
 
         <p>
             <strong>上午：</strong>
@@ -265,7 +193,6 @@
             北野天滿宮 → 金閣寺(鹿苑寺) → 龍安寺
         </p>
 
-
         <div class="transport-tip">
 
             <strong>💡 建議交通方式：</strong>
@@ -276,7 +203,6 @@
             再轉乘市巴士前往金閣寺，
             最後步行或搭公車至龍安寺。
         </div>
-
 
         <div class="nearby-tip">
 
@@ -299,14 +225,7 @@
 
         </div>
 
-
-
-        <!-- =================================================
-             Day 2
-        ================================================== -->
-
         <h3>Day 2：古寺與將軍的足跡（洛西、西北山區）</h3>
-
 
         <p>
             <strong>上午：</strong>
@@ -327,7 +246,6 @@
             下午搭乘市巴士或嵐電前往仁和寺，
             最後搭嵐電至松尾大社站參拜。
         </div>
-
 
         <div class="nearby-tip">
 
@@ -357,24 +275,17 @@
 
         </div>
 
-        <!-- =================================================
-             Day 3
-        ================================================== -->
-
         <h3>Day 3：櫻花楓葉名所與東山散策（東山、洛東地區）</h3>
-
 
         <p>
             <strong>上午：</strong>
             平安神宮 → 銀閣寺(慈照寺)
         </p>
 
-
         <p>
             <strong>下午：</strong>
             南禪寺 → 知恩院 → 八坂神社 → 清水寺
         </p>
-
 
         <div class="transport-tip">
 
@@ -388,7 +299,6 @@
             最後沿著二年坂與三年坂散步抵達清水寺欣賞夜景。
 
         </div>
-
 
         <div class="nearby-tip">
 
@@ -418,27 +328,18 @@
             </ul>
 
         </div>
-
-
-
-        <!-- =================================================
-             Day 4
-        ================================================== -->
-
+        
         <h3>Day 4：朱紅千本鳥居與古都之南（洛南地區）</h3>
-
 
         <p>
             <strong>上午：</strong>
             伏見稻荷大社
         </p>
 
-
         <p>
             <strong>下午：</strong>
             東福寺 → 東寺 → 壬生寺
         </p>
-
 
         <div class="transport-tip">
 
@@ -451,7 +352,6 @@
             最後搭公車前往壬生寺。
 
         </div>
-
 
         <div class="nearby-tip">
 
@@ -482,12 +382,6 @@
 
         </div>
 
-
-
-        <!-- =================================================
-             收藏清單
-        ================================================== -->
-
         <div class="favorite-list-box">
 
             <h4>🌟 收藏清單</h4>
@@ -499,10 +393,6 @@
 
         </div>
 
-        <!-- =================================================
-             整體行程備忘錄
-        ================================================== -->
-
         <div class="custom-notes-section">
 
             <h4>✏️ 個人備忘錄（可記錄御朱印費用、開放時間、自訂行程調整等）</h4>
@@ -510,9 +400,7 @@
             <textarea id="user-notes-input" placeholder="輸入您的行程筆記或御朱印收集備忘錄">
             </textarea>
 
-
             <button class="save-notes-btn" id="save-notes-btn">儲存筆記</button>
-
 
             <span id="save-status">儲存成功！</span>
 
@@ -520,15 +408,7 @@
 
     </div>
 
-    <!-- =====================================================
-         JavaScript
-    ====================================================== -->
-
     <script>
-
-        /* =================================================
-           1. 取得 HTML 元素
-        ================================================= */
 
         const displayImg =
             document.getElementById("display-img");
@@ -569,38 +449,14 @@
         const mapFrame =
             document.getElementById("map-frame");
 
-
-
-        /* =================================================
-           2. 景點資料
-        ================================================= */
-
         let shrineData = {};
 
-
-
-        /* =================================================
-           3. 記錄目前選擇的景點
-        ================================================= */
-
         let currentSpotId = "";
-
-
-
-        /* =================================================
-           4. 讀取以前的收藏
-        ================================================= */
 
         let favorites =
             JSON.parse(
                 localStorage.getItem("kyoto_favorites")
             );
-
-
-        /*
-           如果沒有以前的收藏，
-           就建立空陣列。
-        */
 
         if (favorites == null) {
 
@@ -608,20 +464,9 @@
 
         }
 
-
-
-        /* =================================================
-           5. 載入 kyoto.json
-        ================================================= */
-
         fetch("kyoto.json")
 
             .then(function (response) {
-
-
-                /*
-                   檢查 JSON 是否成功載入。
-                */
 
                 if (!response.ok) {
 
@@ -631,11 +476,6 @@
 
                 }
 
-
-                /*
-                   將 JSON 轉成 JavaScript 資料。
-                */
-
                 return response.json();
 
             })
@@ -643,17 +483,7 @@
 
             .then(function (data) {
 
-
-                /*
-                   將資料放進 shrineData。
-                */
-
                 shrineData = data;
-
-
-                /*
-                   更新收藏清單。
-                */
 
                 updateFavorites();
 
@@ -662,12 +492,6 @@
 
             .catch(function (error) {
 
-
-                /*
-                   如果發生錯誤，
-                   在 Console 顯示。
-                */
-
                 console.log(
                     "無法載入 JSON 資料：",
                     error
@@ -675,20 +499,8 @@
 
             });
 
-
-
-        /* =================================================
-           6. 點擊景點
-        ================================================= */
-
         const listItems =
             document.querySelectorAll("ol li");
-
-
-        /*
-           使用 forEach()
-           一個一個設定景點。
-        */
 
         listItems.forEach(function (li) {
 
@@ -697,69 +509,27 @@
                 "click",
                 function (event) {
 
-
-                    /*
-                       如果點擊的是收藏按鈕，
-                       就不要顯示景點介紹。
-                    */
-
                     if (event.target.tagName == "BUTTON") {
 
                         return;
 
                     }
 
-
-                    /*
-                       取得景點 ID。
-                    */
-
                     let id =
                         this.getAttribute("data-id");
 
-
-                    /*
-                       記住目前景點。
-                    */
-
                     currentSpotId = id;
-
-
-                    /*
-                       找出 JSON 裡的景點資料。
-                    */
 
                     let info =
                         shrineData[id];
 
-
-                    /*
-                       如果有資料，
-                       就顯示景點資訊。
-                    */
-
                     if (info != null) {
-
-
-                        /*
-                           景點介紹
-                        */
 
                         displayDesc.textContent =
                             info.desc || "";
 
-
-                        /*
-                           交通資訊
-                        */
-
                         displayTrans.textContent =
                             info.trans || "";
-
-
-                        /*
-                           開放時間
-                        */
 
                         if (info.time) {
 
@@ -772,11 +542,6 @@
                                 "";
 
                         }
-
-
-                        /*
-                           官方網站
-                        */
 
                         if (info.url) {
 
@@ -796,11 +561,6 @@
 
                         }
 
-
-                        /*
-                           景點圖片
-                        */
-
                         if (info.imgUrl) {
 
                             displayImg.src =
@@ -813,21 +573,10 @@
 
                         }
 
-
-                        /*
-                           圖片替代文字
-                        */
-
                         displayImg.alt =
                             info.name || "景點圖片";
 
-
-                        /*
-                           Google Maps
-                        */
-
                         if (info.lat && info.lng) {
-
 
                             mapFrame.src =
                                 "https://www.google.com/maps?q="
@@ -836,43 +585,24 @@
                                 + info.lng
                                 + "&output=embed";
 
-
                         } else {
-
 
                             mapFrame.src =
                                 "https://www.google.com/maps?q="
                                 + encodeURIComponent(info.name)
                                 + "&output=embed";
-
                         }
-
-
-                        /*
-                           讀取這個景點的筆記。
-                        */
 
                         let note =
                             localStorage.getItem(
                                 "note_" + id
                             );
 
-
-                        /*
-                           如果沒有筆記，
-                           就使用空字串。
-                        */
-
                         if (note == null) {
 
                             note = "";
 
                         }
-
-
-                        /*
-                           顯示景點筆記。
-                        */
 
                         if (note != "") {
 
@@ -886,11 +616,6 @@
 
                         }
 
-
-                        /*
-                           把舊筆記放進輸入框。
-                        */
-
                         spotNoteInput.value =
                             note;
 
@@ -901,36 +626,13 @@
 
         });
 
-
-
-        /* =================================================
-           7. 收藏功能
-        ================================================= */
-
         const favButtons =
             document.querySelectorAll(".fav-btn");
 
-
-        /*
-           使用 forEach()
-           處理每一個收藏按鈕。
-        */
-
         favButtons.forEach(function (button) {
-
-
-            /*
-               取得景點 ID。
-            */
 
             let id =
                 button.getAttribute("data-id");
-
-
-            /*
-               如果以前已經收藏，
-               按鈕顯示「已收藏」。
-            */
 
             if (favorites.includes(id)) {
 
@@ -941,36 +643,13 @@
 
             }
 
-
-            /*
-               點擊收藏按鈕。
-            */
-
             button.addEventListener(
                 "click",
                 function (event) {
 
-
-                    /*
-                       防止同時觸發景點 click。
-                    */
-
                     event.stopPropagation();
 
-
-                    /*
-                       檢查是不是已經收藏。
-                    */
-
                     if (favorites.includes(id)) {
-
-
-                        /*
-                           取消收藏。
-
-                           filter()
-                           留下不是目前景點的資料。
-                        */
 
                         favorites =
                             favorites.filter(
@@ -980,11 +659,6 @@
 
                                 }
                             );
-
-
-                        /*
-                           改回按鈕樣式。
-                        */
 
                         button.classList.remove(
                             "active"
@@ -997,17 +671,7 @@
 
                     } else {
 
-
-                        /*
-                           加入收藏。
-                        */
-
                         favorites.push(id);
-
-
-                        /*
-                           改變按鈕樣式。
-                        */
 
                         button.classList.add(
                             "active"
@@ -1019,20 +683,10 @@
 
                     }
 
-
-                    /*
-                       儲存收藏資料。
-                    */
-
                     localStorage.setItem(
                         "kyoto_favorites",
                         JSON.stringify(favorites)
                     );
-
-
-                    /*
-                       更新收藏清單。
-                    */
 
                     updateFavorites();
 
@@ -1041,28 +695,12 @@
 
         });
 
-
-
-        /* =================================================
-           8. 更新收藏清單
-        ================================================= */
-
         function updateFavorites() {
-
-
-            /*
-               找到收藏清單。
-            */
 
             const favDisplay =
                 document.getElementById(
                     "fav-list-display"
                 );
-
-
-            /*
-               如果沒有收藏。
-            */
 
             if (favorites.length == 0) {
 
@@ -1073,25 +711,9 @@
 
             }
 
-
-            /*
-               建立空陣列。
-            */
-
             let names = [];
 
-
-            /*
-               使用 forEach()
-               一個一個找景點名稱。
-            */
-
             favorites.forEach(function (id) {
-
-
-                /*
-                   如果 JSON 有這個景點。
-                */
 
                 if (shrineData[id] != null) {
 
@@ -1107,32 +729,14 @@
 
             });
 
-
-            /*
-               join()
-               把景點名稱用「、」連起來。
-            */
-
             favDisplay.textContent =
                 names.join("、");
 
         }
 
-
-
-        /* =================================================
-           9. 儲存景點專屬筆記
-        ================================================= */
-
         saveSpotNoteBtn.addEventListener(
             "click",
             function () {
-
-
-                /*
-                   如果還沒有選擇景點。
-                */
-
                 if (currentSpotId == "") {
 
                     alert(
@@ -1143,28 +747,13 @@
 
                 }
 
-
-                /*
-                   取得輸入內容。
-                */
-
                 let note =
                     spotNoteInput.value.trim();
-
-
-                /*
-                   儲存筆記。
-                */
 
                 localStorage.setItem(
                     "note_" + currentSpotId,
                     note
                 );
-
-
-                /*
-                   更新畫面。
-                */
 
                 if (note != "") {
 
@@ -1178,18 +767,8 @@
 
                 }
 
-
-                /*
-                   顯示儲存成功。
-                */
-
                 spotNoteStatus.style.display =
                     "inline";
-
-
-                /*
-                   2 秒後隱藏。
-                */
 
                 setTimeout(
                     function () {
@@ -1203,12 +782,6 @@
 
             }
         );
-
-
-
-        /* =================================================
-           10. 整體行程備忘錄
-        ================================================= */
 
         const notesInput =
             document.getElementById(
@@ -1227,20 +800,10 @@
                 "save-status"
             );
 
-
-        /*
-           讀取以前的整體備忘錄。
-        */
-
         let oldNotes =
             localStorage.getItem(
                 "kyoto_user_general_notes"
             );
-
-
-        /*
-           如果沒有以前的筆記。
-        */
 
         if (oldNotes == null) {
 
@@ -1248,45 +811,20 @@
 
         }
 
-
-        /*
-           放入輸入框。
-        */
-
         notesInput.value =
             oldNotes;
-
-
-        /*
-           點擊儲存按鈕。
-        */
 
         saveNotesBtn.addEventListener(
             "click",
             function () {
-
-
-                /*
-                   儲存整體行程備忘錄。
-                */
 
                 localStorage.setItem(
                     "kyoto_user_general_notes",
                     notesInput.value
                 );
 
-
-                /*
-                   顯示儲存成功。
-                */
-
                 saveStatus.style.display =
                     "inline";
-
-
-                /*
-                   2 秒後隱藏。
-                */
 
                 setTimeout(
                     function () {
@@ -1301,11 +839,6 @@
             }
         );
 
-
-
-        /* =================================================
-           11. 4天行程 / 景點介紹切換
-        ================================================= */
 
         const toggleBtn =
             document.getElementById(
@@ -1325,38 +858,15 @@
             );
 
 
-        /*
-           false = 景點介紹
-
-           true = 4天行程
-        */
-
         let isItineraryView = false;
-
-
-        /*
-           點擊切換按鈕。
-        */
 
         toggleBtn.addEventListener(
             "click",
             function () {
 
 
-                /*
-                   true 和 false 互換。
-
-                   false → true
-                   true → false
-                */
-
                 isItineraryView =
                     !isItineraryView;
-
-
-                /*
-                   顯示 4 天行程。
-                */
 
                 if (isItineraryView == true) {
 
@@ -1374,11 +884,6 @@
 
                 } else {
 
-
-                    /*
-                       顯示景點介紹。
-                    */
-
                     mainContainer.style.display =
                         "flex";
 
@@ -1395,31 +900,11 @@
             }
         );
 
-
-
-        /* =================================================
-           12. 網頁一開始的狀態
-        ================================================= */
-
-        /*
-           一開始顯示景點介紹。
-        */
-
         mainContainer.style.display =
             "flex";
 
-
-        /*
-           一開始隱藏 4 天行程。
-        */
-
         itineraryContainer.style.display =
             "none";
-
-
-        /*
-           一開始隱藏儲存成功提示。
-        */
 
         spotNoteStatus.style.display =
             "none";
@@ -1428,9 +913,7 @@
         saveStatus.style.display =
             "none";
 
-
     </script>
-
 
 </body>
 
